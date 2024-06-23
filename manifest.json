@@ -3,5 +3,11 @@
     "name": "YouTube Double Tap Rewind & FF",
     "version": "0.1",
     "description": "Enables double tap gestures for rewinding and fast-forwarding YouTube videos",
-    "author": "Roman Trifonov"
+    "author": "Roman Trifonov",
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["main.js"]
+        }
+    ]
 }
